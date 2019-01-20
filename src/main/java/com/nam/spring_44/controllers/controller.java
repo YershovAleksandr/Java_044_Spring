@@ -42,4 +42,19 @@ public class controller {
         return "viewusers";
     }
 
+    @RequestMapping("/editform")
+    public String editform(){
+        return "editform";
+    }
+
+    @RequestMapping("/edituser")
+    public String edituser(){
+        return "edituser";
+    }
+
+    @RequestMapping("/deleteuser")
+    public String deleteuser(){
+        return "deleteuser";
+    }
+
 }
