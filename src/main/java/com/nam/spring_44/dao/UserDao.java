@@ -7,12 +7,14 @@ import java.util.List;
 
 public class UserDao {
 
+    private static List<User> list = new ArrayList<>();
+
     public static int save(User u){
         return 42;
     }
 
     public static List<User> getAllRecords(){
-        List<User> list = new ArrayList<>();
+
 
         User u = new User();
 
@@ -20,11 +22,24 @@ public class UserDao {
         u.setName("Alex");
         u.setPassword("qwerty");
         u.setEmail("1@2");
-        u.setSex("F");
-        u.setCountry("Ussr");
+        u.setSex("male");
+        u.setCountry("Belarus");
 
         list.add(u);
 
         return list;
     }
+
+    public static int update(User u){
+        return 42;
+    }
+
+    public static void delete(User u){
+        //return 42;
+    }
+
+    public static User getRecordById(int id){
+        return list.get(0);
+    }
+
 }
